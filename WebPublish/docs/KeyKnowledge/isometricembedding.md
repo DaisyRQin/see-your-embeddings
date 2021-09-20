@@ -1,0 +1,5 @@
+# Isometirc embedding
+
+In Riemannian geometry, let \((M, g)\) and \((N, h)\) be Riemannian manifolds, an **isometric embedding** is a smooth embedding \(f : M \rightarrow N\) which preserves the metric in the sense that \(g\) is equal to the pullback of \(h\) by \(f\), i.e. \(g = f\times h\). In our visualization situation, the pullback can be treated as a map from the high-dimensional manifold to a low-dimensional manifold. 
+
+To make it simple, the isometric embedding preserves all the distance/ordinal information obtained from the dataset in the high-dimensional space while doing the embedding process. In reality, it is not possible to isometrically embed any data with an intrinsic dimensionality greater than 3 to a 2,3-D spaces. However, approaches like multi-dimensional scaling (MDS), [soft ordinal embedding(SOE)](softOrdinalEmbedding.md) are typical algorithms to preserve the approximate isometry of the dataset.

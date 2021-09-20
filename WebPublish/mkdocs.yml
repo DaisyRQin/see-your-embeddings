@@ -1,0 +1,68 @@
+site_name: Data Visualization Tutorial
+site_url: https://example.com
+
+nav:
+  - Home: index.md
+  - "Tutorial":
+      - COVA Tutorial: COVATutorial.md
+      - ANGEL Tutorial: PageUnderConstruction.md
+      - Evaluation: PageUnderConstruction.md
+  - "Demo": Demo.md
+  - Key Knowledge: 
+    - Lists: KeyKnowledges.md
+    - adjancency matrix: ./KeyKnowledge/adjacencymatrix.md
+    - cohort distance: ./KeyKnowledge/cohortdistance.md
+    - cohort membership: ./KeyKnowledge/cohortmembership.md
+    - confidence matrix: ./KeyKnowledge/confidencematrix.md
+    - isometric embedding: ./KeyKnowledge/isometricembedding.md
+    - kmeans clustering: ./KeyKnowledge/kmeansclustering.md
+    - Local Anchor Embedding: ./KeyKnowledge/localAnchorEmbedding.md
+    - Soft Ordinal Embedding: ./KeyKnowledge/softOrdinalEmbedding.md
+  - Function Lists: 
+    - Lists: FunctionLists.md
+    - ANGEL.AnchorPointGeneration: PageUnderConstruction.md
+    - ANGEL.AnchorEmbedding: PageUnderConstruction.md
+    - ANGEL.ANGEL_embedding: PageUnderConstruction.md
+    - COVA.PrototypeGeneration: ./FunctionList/PrototypeGeneration.md
+    - COVA.PrototypeEmbedding: ./FunctionList/PrototypeEmbedding.md
+    - COVA.CohortConfidence: ./FunctionList/CohortConfidence.md
+    - COVA.COVAembedding: ./FunctionList/COVAembedding.md
+    - evaluation.Prev: PageUnderConstruction.md
+    - FunctionFile.loadData: ./FunctionList/loadData.md
+    - FunctionFile.DataScaler: ./FunctionList/DataScaler.md
+    - FunctionFile.CohortDistance: ./FunctionList/CohortDistance.md
+    - FunctionFile.AdjacencyMatrix: ./FunctionList/AdjacencyMatrix.md
+    - localanchorembedding.AnchorGraph: ./FunctionList/AnchorGraph.md
+    - SOEembedding.SOE: ./FunctionList/SOE.md
+  - Examples: PageUnderConstruction.md
+
+# theme:
+#   name: null
+#   custom_dir: 'mkdocs_docskimmer'
+#   include_search_page: true
+#   search_index_only: false
+#   static_templates:
+#   - 404.html
+#   palette:
+#     primary: deep purple
+
+theme:
+  name: material
+  logo: assets/logo-white.png
+
+plugins: ["search"]
+
+# add theme version number here
+extra:
+  version: 0.3.x
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra_css:
+  - stylesheets/logo.css
+  - stylesheets/header.css
+
+markdown_extensions:
+  - mdx_math
+  - attr_list
